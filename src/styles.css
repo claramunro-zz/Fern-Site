@@ -1,0 +1,140 @@
+html {
+  padding: 10vw;
+  height: 100vh;
+}
+
+body { 
+background-color: rgb(241, 241, 241);
+}
+
+#logoText {
+  text-align: right;
+  padding: 0 0 2vw 0;
+}
+
+h1, h2, h3, p {
+  font-family: source-code-pro, monospace;
+  color: rgb(27, 27, 27);
+}
+
+li {
+  list-style-type: none;
+  font-family: source-code-pro, monospace;
+  color: rgb(27, 27, 27);
+}
+
+.selectNavItem {
+  padding: 10px;
+  border: 1px grey solid;
+  margin: 5px;
+}
+
+.selectNavItem:hover {
+  border: 1px rgb(209, 209, 209) solid;
+  cursor: pointer;
+  box-shadow: 5px 5px 3px grey;
+}
+
+#deets {
+  border: solid black 2px;
+  height: 400px;;
+  overflow-y: scroll;
+}
+
+#name {
+  padding-top: 1vw;
+  text-decoration: underline;
+  font-size: 2em;
+  padding-bottom: 2vw;
+  font-weight: 600;
+}
+
+#description {
+  font-family: 'Special Elite', cursive;
+  font-size: 1em;
+  font-weight: 600;
+  padding-right: 2vw;
+
+}
+
+.deliverable {
+  padding-bottom: 5vw;
+  font-weight: 600;
+
+}
+
+#id {
+  color: grey;
+  font-size: .8em;
+}
+
+#color {
+  font-family: 'Permanent Marker', cursive;
+}
+
+
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+  border: 1px solid rgb(50, 205, 133);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  background: rgb(186, 209, 177);  
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background: #a1bb69;  
+  }
+
+
+
+  /* MEDIA QUERIES */
+@media (max-width: 992px) {
+
+  #image {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 10px;
+    object-fit: contain;
+    padding: 1vw;
+    border: black solid 1px;
+  }
+}
+
+@media (min-width: 992px) {
+  #image {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 10px;
+  object-fit: contain;
+  padding: 1vw;
+  border: black solid 1px;
+}
+}
+
+@media (max-width: 576px) {
+  html {
+    padding: 3vw;
+  }
+  p {
+    font-size: 10em;
+  }
+  #image {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 10px;
+    object-fit: cover;
+    padding: 1vw;
+    border: black solid 1px;
+  }
+  #deets {
+    border: solid black 2px;
+    overflow-y: scroll;
+  }
+}
