@@ -98,23 +98,21 @@ li {
 @media (max-width: 992px) {
 
   #image {
-    width: 10vw;
-    height: 10vw;
-    border-radius: 10px;
-    object-fit: contain;
-    padding: 1vw;
+    width: 15vw;
+    height: 15vw;
     border: black solid 1px;
   }
 }
 
 @media (min-width: 992px) {
   #image {
-  width: 10vw;
-  height: 10vw;
-  border-radius: 10px;
-  object-fit: contain;
-  padding: 1vw;
+  width: 18vw;
+  height: 18vw;
   border: black solid 1px;
+}
+
+#deets {
+  height: 1000px;
 }
 }
 
@@ -125,6 +123,15 @@ li {
   p {
     font-size: 10em;
   }
+
+.col-md-3 {
+  order: 1;
+}
+
+.col-md-9 {
+  order: 2;
+}
+
   #image {
     width: 20vw;
     height: 20vw;
@@ -136,5 +143,6 @@ li {
   #deets {
     border: solid black 2px;
     overflow-y: scroll;
+    height: 600px;
   }
 }
