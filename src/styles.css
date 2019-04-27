@@ -1,5 +1,5 @@
 html {
-  padding: 10vw;
+  padding: 7vw;
   height: 100vh;
 }
 
@@ -37,7 +37,7 @@ li {
 
 #deets {
   border: solid black 2px;
-  height: 400px;;
+  height: 375px;
   overflow-y: scroll;
 }
 
@@ -94,55 +94,61 @@ li {
 
 
 
-  /* MEDIA QUERIES */
-@media (max-width: 992px) {
 
+
+/* MEDIA QUERIES */
+
+/* DESKTOP */
+@media (min-width: 992px) {
   #image {
     width: 15vw;
     height: 15vw;
     border: black solid 1px;
   }
+  #deets {
+    overflow-y: scroll;
+    height: 375px;
+  }
 }
 
-@media (min-width: 992px) {
+
+/* TABLET */
+
+@media (max-width: 992px) {
   #image {
-  width: 18vw;
-  height: 18vw;
-  border: black solid 1px;
+    width: 15vw;
+    height: 15vw;
+  }
+  #deets {
+    overflow-y: scroll;
+    height: 370px;
+  }
 }
 
-#deets {
-  height: 1000px;
-}
-}
 
+ /* PHONES */
 @media (max-width: 576px) {
   html {
-    padding: 3vw;
+    padding: 7vw;
   }
   p {
     font-size: 10em;
   }
-
-.col-md-3 {
-  order: 1;
-}
-
-.col-md-9 {
-  order: 2;
-}
-
+  .col-md-3 {
+    order: 1;
+  }
+  .col-md-9 {
+    order: 2;
+  }
   #image {
     width: 20vw;
     height: 20vw;
     border-radius: 10px;
-    object-fit: cover;
+    object-fit: contain;
     padding: 1vw;
-    border: black solid 1px;
   }
   #deets {
-    border: solid black 2px;
     overflow-y: scroll;
-    height: 600px;
+    height: 400px;
   }
 }
