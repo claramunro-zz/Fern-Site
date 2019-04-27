@@ -13,13 +13,13 @@ background-color: rgb(241, 241, 241);
 }
 
 h1, h2, h3, p {
-  font-family: source-code-pro, monospace;
+  font-family: 'source-code-pro', monospace;
   color: rgb(27, 27, 27);
 }
 
 li {
   list-style-type: none;
-  font-family: source-code-pro, monospace;
+  font-family: 'source-code-pro', monospace;
   color: rgb(27, 27, 27);
 }
 

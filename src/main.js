@@ -9,10 +9,10 @@ $(document).ready(function () {
   let promise = search.returnTheFern();
 
   promise.then(function (response) {
-    // make list with different types (assumes each object is assigned a type)
     let mainbody = JSON.parse(response);
     let body = mainbody.body.data;
 
+    // make list with different types (assumes each object is assigned a type)
     // chair, sofa, rug, table -- more will be added if more types are added to the api
     let nav = [];
     for (let i=0; i<body.length; i++) {
@@ -26,20 +26,22 @@ $(document).ready(function () {
       $('#nav').append(`<button class=selectNavItem id=${type}>${type}_</button>`);
     });
 
-    // if user clicks nav button, assigned the class .selectNavItem show the deets
+    // if user clicks nav button, for every type equal to the assigned id type, show the deets
     $('.selectNavItem').click(function() {
       $('#deets').empty();
       for (let i=0; i<body.length; i++) {
         if (body[i].type === this.getAttribute('id')) {
           $("#deets").append(`
+                
                 <li id=name>${body[i].name}</li>
                 <li id="id">id_ ${body[i].id}</li>
                 <img id=image src=${body[i].imageUrl}>
                 <li id=description>${body[i].description}</li>
                 <li id=cost>cost_ ${body[i].cost}</li>          
                 <li id=stock>stock_ ${body[i].stock}</li>
-                <li id=color>colors_ ${body[i].colors.join(" + ")}</li>`
-          );
+                <li id=color>colors_ ${body[i].colors.join(" + ")}</li>
+                `
+                );
           if (body[i].dimensions) { $("#deets").append(`<li id=dimensions>dimensions_ ${body[i].dimensions.width} x ${body[i].dimensions.length}</li>`); }
           if (body[i].deliverable === true) { $("#deets").append(`<li class=deliverable>deliverable_</li>`); } else { $("#deets").append(`<li class=deliverable>not deliverable_</li>`); }
         }
