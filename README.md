@@ -19,6 +19,24 @@ Responsive, customer facing web application to view the inventory of FERN, a fur
 
 https://it771mq5n2.execute-api.us-west-2.amazonaws.com/production/furniture
 
+### Images
+
+<table width="50%"><tr><td>
+    <img src="/images/mockup1.png" />
+</td></tr></table>
+
+<table width="50%"><tr><td>
+    <img src="/images/mockup2.png" />
+</td></tr></table>
+
+<table width="50%"><tr><td>
+    <img src="/images/mockup3.png" />
+</td></tr></table>
+
+<table width="50%"><tr><td>
+    <img src="/images/mockup4.png" />
+</td></tr></table>
+
 
 ### Setup Instructions
 
